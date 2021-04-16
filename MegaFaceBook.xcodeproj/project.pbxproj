@@ -10,10 +10,13 @@
 		434A801D2629748F003FDC19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434A801C2629748F003FDC19 /* AppDelegate.swift */; };
 		434A801F2629748F003FDC19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434A801E2629748F003FDC19 /* SceneDelegate.swift */; };
 		434A80212629748F003FDC19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434A80202629748F003FDC19 /* ViewController.swift */; };
-		434A80242629748F003FDC19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434A80222629748F003FDC19 /* Main.storyboard */; };
+		434A80242629748F003FDC19 /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434A80222629748F003FDC19 /* Test.storyboard */; };
 		434A802626297490003FDC19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 434A802526297490003FDC19 /* Assets.xcassets */; };
 		434A802926297490003FDC19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434A802726297490003FDC19 /* LaunchScreen.storyboard */; };
 		434A803A2629EA3A003FDC19 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434A80392629EA3A003FDC19 /* Login.storyboard */; };
+		434A803D262A0F6C003FDC19 /* CheckRobot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434A803C262A0F6C003FDC19 /* CheckRobot.storyboard */; };
+		434A8040262A1026003FDC19 /* QuestionHuman.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434A803F262A1026003FDC19 /* QuestionHuman.storyboard */; };
+		434A8044262A116F003FDC19 /* AnswerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434A8043262A116F003FDC19 /* AnswerStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +24,14 @@
 		434A801C2629748F003FDC19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		434A801E2629748F003FDC19 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		434A80202629748F003FDC19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		434A80232629748F003FDC19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		434A80232629748F003FDC19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Test.storyboard; sourceTree = "<group>"; };
 		434A802526297490003FDC19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		434A802826297490003FDC19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		434A802A26297490003FDC19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		434A80392629EA3A003FDC19 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		434A803C262A0F6C003FDC19 /* CheckRobot.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CheckRobot.storyboard; sourceTree = "<group>"; };
+		434A803F262A1026003FDC19 /* QuestionHuman.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuestionHuman.storyboard; sourceTree = "<group>"; };
+		434A8043262A116F003FDC19 /* AnswerStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AnswerStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +84,11 @@
 		434A80332629B12A003FDC19 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				434A80222629748F003FDC19 /* Main.storyboard */,
 				434A80392629EA3A003FDC19 /* Login.storyboard */,
+				434A803C262A0F6C003FDC19 /* CheckRobot.storyboard */,
+				434A803F262A1026003FDC19 /* QuestionHuman.storyboard */,
+				434A8043262A116F003FDC19 /* AnswerStoryboard.storyboard */,
+				434A80222629748F003FDC19 /* Test.storyboard */,
 				434A802726297490003FDC19 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -168,9 +177,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				434A803A2629EA3A003FDC19 /* Login.storyboard in Resources */,
+				434A803D262A0F6C003FDC19 /* CheckRobot.storyboard in Resources */,
 				434A802926297490003FDC19 /* LaunchScreen.storyboard in Resources */,
+				434A8044262A116F003FDC19 /* AnswerStoryboard.storyboard in Resources */,
 				434A802626297490003FDC19 /* Assets.xcassets in Resources */,
-				434A80242629748F003FDC19 /* Main.storyboard in Resources */,
+				434A8040262A1026003FDC19 /* QuestionHuman.storyboard in Resources */,
+				434A80242629748F003FDC19 /* Test.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,12 +202,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		434A80222629748F003FDC19 /* Main.storyboard */ = {
+		434A80222629748F003FDC19 /* Test.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				434A80232629748F003FDC19 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Test.storyboard;
 			sourceTree = "<group>";
 		};
 		434A802726297490003FDC19 /* LaunchScreen.storyboard */ = {
