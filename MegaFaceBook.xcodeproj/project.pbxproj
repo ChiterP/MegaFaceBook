@@ -56,15 +56,55 @@
 		434A801B2629748F003FDC19 /* MegaFaceBook */ = {
 			isa = PBXGroup;
 			children = (
-				434A801C2629748F003FDC19 /* AppDelegate.swift */,
-				434A801E2629748F003FDC19 /* SceneDelegate.swift */,
-				434A80202629748F003FDC19 /* ViewController.swift */,
-				434A80222629748F003FDC19 /* Main.storyboard */,
-				434A802526297490003FDC19 /* Assets.xcassets */,
-				434A802726297490003FDC19 /* LaunchScreen.storyboard */,
-				434A802A26297490003FDC19 /* Info.plist */,
+				434A80372629B197003FDC19 /* Data's */,
+				434A80322629B019003FDC19 /* ViewControllers */,
+				434A80352629B146003FDC19 /* Supporting */,
+				434A80342629B13B003FDC19 /* Resources */,
+				434A80332629B12A003FDC19 /* Storyboards */,
 			);
 			path = MegaFaceBook;
+			sourceTree = "<group>";
+		};
+		434A80322629B019003FDC19 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				434A80202629748F003FDC19 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		434A80332629B12A003FDC19 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				434A80222629748F003FDC19 /* Main.storyboard */,
+				434A802726297490003FDC19 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		434A80342629B13B003FDC19 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				434A802526297490003FDC19 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		434A80352629B146003FDC19 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				434A802A26297490003FDC19 /* Info.plist */,
+				434A801C2629748F003FDC19 /* AppDelegate.swift */,
+				434A801E2629748F003FDC19 /* SceneDelegate.swift */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		434A80372629B197003FDC19 /* Data's */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Data's";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +328,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X7L83V7V4P;
-				INFOPLIST_FILE = MegaFaceBook/Info.plist;
+				INFOPLIST_FILE = MegaFaceBook/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +347,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X7L83V7V4P;
-				INFOPLIST_FILE = MegaFaceBook/Info.plist;
+				INFOPLIST_FILE = MegaFaceBook/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
