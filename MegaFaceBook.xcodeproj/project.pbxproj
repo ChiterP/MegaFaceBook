@@ -13,6 +13,7 @@
 		434A80242629748F003FDC19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434A80222629748F003FDC19 /* Main.storyboard */; };
 		434A802626297490003FDC19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 434A802526297490003FDC19 /* Assets.xcassets */; };
 		434A802926297490003FDC19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434A802726297490003FDC19 /* LaunchScreen.storyboard */; };
+		434A803A2629EA3A003FDC19 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434A80392629EA3A003FDC19 /* Login.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		434A802526297490003FDC19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		434A802826297490003FDC19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		434A802A26297490003FDC19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		434A80392629EA3A003FDC19 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				434A80222629748F003FDC19 /* Main.storyboard */,
+				434A80392629EA3A003FDC19 /* Login.storyboard */,
 				434A802726297490003FDC19 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -164,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				434A803A2629EA3A003FDC19 /* Login.storyboard in Resources */,
 				434A802926297490003FDC19 /* LaunchScreen.storyboard in Resources */,
 				434A802626297490003FDC19 /* Assets.xcassets in Resources */,
 				434A80242629748F003FDC19 /* Main.storyboard in Resources */,
