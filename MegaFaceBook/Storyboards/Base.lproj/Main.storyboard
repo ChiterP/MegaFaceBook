@@ -119,6 +119,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="oYz-4r-t1m"/>
+                    <connections>
+                        <segue destination="Gul-GJ-414" kind="presentation" id="YgL-kI-47Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qug-vh-Xn9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -153,7 +156,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AAD-9i-cyY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2124.375" y="227.11267605633802"/>
+            <point key="canvasLocation" x="1584" y="182"/>
         </scene>
         <!--Login-->
         <scene sceneID="58f-l4-o04">
@@ -161,39 +164,11 @@
                 <viewControllerPlaceholder storyboardName="Login" id="3qv-aE-tmK" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I4K-U9-Cxk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="517" y="-346"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="81n-GU-QCb">
-            <objects>
-                <viewController id="AgX-an-xbL" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="dYT-pU-Z6j">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="вопрос n" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6W-BJ-0DS">
-                                <rect key="frame" x="100" y="110" width="72" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="2lD-p7-Tgw"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Z1y-UP-8UF"/>
-                    <connections>
-                        <segue destination="Gul-GJ-414" kind="presentation" id="q0J-16-mNF"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ldn-6x-Rmt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1350" y="1026"/>
+            <point key="canvasLocation" x="488" y="41"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="q0J-16-mNF"/>
+        <segue reference="YgL-kI-47Q"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
