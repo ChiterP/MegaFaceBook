@@ -8,6 +8,11 @@
 import UIKit
 
 class RobotViewController: UIViewController {
+    
+    @IBOutlet weak var labelUI: UILabel!
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
