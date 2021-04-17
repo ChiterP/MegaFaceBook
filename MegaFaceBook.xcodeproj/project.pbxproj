@@ -68,7 +68,7 @@
 		434A801B2629748F003FDC19 /* MegaFaceBook */ = {
 			isa = PBXGroup;
 			children = (
-				434A80372629B197003FDC19 /* Data's */,
+				434A80372629B197003FDC19 /* Datas */,
 				434A80322629B019003FDC19 /* ViewControllers */,
 				434A80352629B146003FDC19 /* Supporting */,
 				434A80342629B13B003FDC19 /* Resources */,
@@ -118,11 +118,11 @@
 			path = Supporting;
 			sourceTree = "<group>";
 		};
-		434A80372629B197003FDC19 /* Data's */ = {
+		434A80372629B197003FDC19 /* Datas */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "Data's";
+			path = Datas;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

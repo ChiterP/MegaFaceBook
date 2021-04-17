@@ -28,18 +28,20 @@
                     </view>
                     <connections>
                         <outlet property="nameTF" destination="mwp-Vg-T6n" id="cBE-Rn-huQ"/>
-                        <segue destination="aCA-Uu-gJE" kind="show" id="FbO-Hs-UiW"/>
-                        <segue destination="wfx-aU-UBA" kind="presentation" id="0g5-Rk-pyb"/>
+                        <segue destination="aCA-Uu-gJE" kind="show" identifier="chekBoard" id="FbO-Hs-UiW"/>
+                        <segue destination="wfx-aU-UBA" kind="presentation" identifier="answerBoard" id="0g5-Rk-pyb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9aZ-Fn-O0I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-219" y="-42"/>
+            <point key="canvasLocation" x="54" y="-42"/>
         </scene>
         <!--AnswerStoryboard-->
         <scene sceneID="hCX-sH-yMM">
             <objects>
-                <viewControllerPlaceholder storyboardName="AnswerStoryboard" id="wfx-aU-UBA" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="AnswerStoryboard" id="wfx-aU-UBA" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="KpI-fP-8lH"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xGJ-Hm-JAm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="799" y="-174"/>
