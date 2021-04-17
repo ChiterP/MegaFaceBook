@@ -18,6 +18,7 @@
 		434A8044262A116F003FDC19 /* AnswerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434A8043262A116F003FDC19 /* AnswerStoryboard.storyboard */; };
 		434A8047262B3242003FDC19 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434A8046262B3242003FDC19 /* LoginViewController.swift */; };
 		5E169D23262B4321007BF5BE /* RobotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E169D22262B4321007BF5BE /* RobotViewController.swift */; };
+		C19E22F5262B80F4003D2BD1 /* LoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19E22F4262B80F4003D2BD1 /* LoginData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		434A8043262A116F003FDC19 /* AnswerStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AnswerStoryboard.storyboard; sourceTree = "<group>"; };
 		434A8046262B3242003FDC19 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5E169D22262B4321007BF5BE /* RobotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotViewController.swift; sourceTree = "<group>"; };
+		C19E22F4262B80F4003D2BD1 /* LoginData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +68,7 @@
 		434A801B2629748F003FDC19 /* MegaFaceBook */ = {
 			isa = PBXGroup;
 			children = (
-				434A80372629B197003FDC19 /* Datas */,
+				C19E22F8262B8100003D2BD1 /* DataLayer */,
 				434A80322629B019003FDC19 /* ViewControllers */,
 				434A80352629B146003FDC19 /* Supporting */,
 				434A80342629B13B003FDC19 /* Resources */,
@@ -88,10 +90,10 @@
 		434A80332629B12A003FDC19 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				434A80222629748F003FDC19 /* Main.storyboard */,
 				434A803C262A0F6C003FDC19 /* CheckRobot.storyboard */,
 				434A803F262A1026003FDC19 /* QuestionHuman.storyboard */,
 				434A8043262A116F003FDC19 /* AnswerStoryboard.storyboard */,
-				434A80222629748F003FDC19 /* Main.storyboard */,
 				434A802726297490003FDC19 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -115,11 +117,12 @@
 			path = Supporting;
 			sourceTree = "<group>";
 		};
-		434A80372629B197003FDC19 /* Datas */ = {
+		C19E22F8262B8100003D2BD1 /* DataLayer */ = {
 			isa = PBXGroup;
 			children = (
+				C19E22F4262B80F4003D2BD1 /* LoginData.swift */,
 			);
-			path = Datas;
+			path = DataLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +203,7 @@
 				434A801D2629748F003FDC19 /* AppDelegate.swift in Sources */,
 				5E169D23262B4321007BF5BE /* RobotViewController.swift in Sources */,
 				434A801F2629748F003FDC19 /* SceneDelegate.swift in Sources */,
+				C19E22F5262B80F4003D2BD1 /* LoginData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
