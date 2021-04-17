@@ -17,6 +17,7 @@
 		434A803D262A0F6C003FDC19 /* CheckRobot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434A803C262A0F6C003FDC19 /* CheckRobot.storyboard */; };
 		434A8040262A1026003FDC19 /* QuestionHuman.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434A803F262A1026003FDC19 /* QuestionHuman.storyboard */; };
 		434A8044262A116F003FDC19 /* AnswerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434A8043262A116F003FDC19 /* AnswerStoryboard.storyboard */; };
+		434A8047262B3242003FDC19 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434A8046262B3242003FDC19 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		434A803C262A0F6C003FDC19 /* CheckRobot.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CheckRobot.storyboard; sourceTree = "<group>"; };
 		434A803F262A1026003FDC19 /* QuestionHuman.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuestionHuman.storyboard; sourceTree = "<group>"; };
 		434A8043262A116F003FDC19 /* AnswerStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AnswerStoryboard.storyboard; sourceTree = "<group>"; };
+		434A8046262B3242003FDC19 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				434A80202629748F003FDC19 /* ViewController.swift */,
+				434A8046262B3242003FDC19 /* LoginViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				434A8047262B3242003FDC19 /* LoginViewController.swift in Sources */,
 				434A80212629748F003FDC19 /* ViewController.swift in Sources */,
 				434A801D2629748F003FDC19 /* AppDelegate.swift in Sources */,
 				434A801F2629748F003FDC19 /* SceneDelegate.swift in Sources */,

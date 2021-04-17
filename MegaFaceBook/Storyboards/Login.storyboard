@@ -8,17 +8,26 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="4nN-T7-a2l">
             <objects>
-                <viewController id="Q5W-ie-kDr" sceneMemberID="viewController">
+                <viewController id="Q5W-ie-kDr" customClass="LoginViewController" customModule="MegaFaceBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SvX-F0-HqN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mwp-Vg-T6n">
+                                <rect key="frame" x="112" y="120" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="2f9-H8-I55"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="nameTF" destination="mwp-Vg-T6n" id="cBE-Rn-huQ"/>
                         <segue destination="aCA-Uu-gJE" kind="show" id="FbO-Hs-UiW"/>
                         <segue destination="wfx-aU-UBA" kind="presentation" id="0g5-Rk-pyb"/>
                     </connections>
