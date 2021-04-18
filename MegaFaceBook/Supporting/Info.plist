@@ -42,9 +42,9 @@
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
-	<string>Login</string>
+	<string>CheckRobot</string>
 	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
+	<string>CheckRobot</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
