@@ -11,10 +11,22 @@ import Foundation
 struct Person {
     let name: String
     let surname: String
-    let authInfo: AuthInfo
-}
-
-struct AuthInfo {
     let login: String
     let pass: String
+//    let authInfo: AuthInfo
 }
+
+//struct AuthInfo {
+//
+//}
+
+
+extension Person {
+    static func getPerson() -> [Person] {
+        [
+            Person(name: "Alberto ", surname: "Ruiz", login: "admin", pass: "admin")
+        ]
+    }
+}
+
+

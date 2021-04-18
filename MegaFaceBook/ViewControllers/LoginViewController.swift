@@ -9,23 +9,40 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-    @IBOutlet weak var nameTF: UITextField!
+    @IBOutlet weak var inputLoginTF: UITextField!
+    @IBOutlet weak var inputPasswordTF: UITextField!
+    
+//    private var person = Person?
+    
+    private let user = "1"
+    private let password = "1"
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+//        print(person)
     }
     
 
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        
+        guard let checkRobotVC = segue.destination as? RobotViewController else { return }
+        guard let userInfotVC = segue.destination as? UserInfoViewController else { return }
     }
-    */
 
+    
+    @IBAction func loginButtonActon(_ sender: Any) {
+        
+        if inputLoginTF.text != user || inputPasswordTF.text != password {
+            performSegue(withIdentifier: "chekRobot", sender: nil)
+        } else {
+            performSegue(withIdentifier: "answer", sender: nil)
+        }
+    }
+
+    
 }
+
