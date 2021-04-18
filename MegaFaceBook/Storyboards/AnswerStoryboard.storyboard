@@ -48,6 +48,10 @@
                             <constraint firstItem="CZm-HQ-XYg" firstAttribute="top" secondItem="Y8x-UJ-RUO" secondAttribute="bottom" constant="30" id="dFA-yd-eLr"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greetingLabel" destination="CZm-HQ-XYg" id="axa-0D-pHX"/>
+                        <outlet property="userInfoLabel" destination="0Ov-2n-kYJ" id="ujf-Vq-tDV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0uM-Li-pUX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
