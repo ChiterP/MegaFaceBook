@@ -17,7 +17,6 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        print(person)
     }
     
 
@@ -27,7 +26,6 @@ class LoginViewController: UIViewController {
 //        guard let checkRobotVC = segue.destination as? RobotViewController else { return }
         guard let userInfotVC = segue.destination as? UserInfoViewController else { return }
         userInfotVC.person = person
-        print(" LoginViewController segue \(person)")
     }
 
     @IBAction func unwindSegue(segue: UIStoryboardSegue) {
