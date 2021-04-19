@@ -9,14 +9,14 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    // MARK: - IB Outlets
     @IBOutlet weak var inputLoginTF: UITextField!
     @IBOutlet weak var inputPasswordTF: UITextField!
     
+    // MARK: - Private properties
     private let person = Person.getPersonData()
       
-
     // MARK: - Navigation
-
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let userInfotVC = segue.destination as? UserInfoViewController else { return }
         userInfotVC.person = person
@@ -27,6 +27,7 @@ class LoginViewController: UIViewController {
         inputPasswordTF.text = ""
     }
     
+    // MARK: IBActions
     @IBAction func loginButtonActon(_ sender: Any) {
        
         if inputLoginTF.text == "" || inputPasswordTF.text == "" {
@@ -56,7 +57,7 @@ class LoginViewController: UIViewController {
 }
 
 
-extension LoginViewController {
+extension LoginViewController: UITextFieldDelegate{
     private func showAlert(title: String, message: String, textField: UITextField? = nil) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default) { _ in
