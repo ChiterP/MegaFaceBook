@@ -12,13 +12,9 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var inputLoginTF: UITextField!
     @IBOutlet weak var inputPasswordTF: UITextField!
     
-//    private var person = Person?
+    private let person = Person.getPersonData()
     
-    private let user = "1"
-    private let password = "1"
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 //        print(person)
@@ -28,18 +24,22 @@ class LoginViewController: UIViewController {
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        guard let checkRobotVC = segue.destination as? RobotViewController else { return }
+//        guard let checkRobotVC = segue.destination as? RobotViewController else { return }
         guard let userInfotVC = segue.destination as? UserInfoViewController else { return }
+        userInfotVC.person = person
+        print(" LoginViewController segue \(person)")
     }
 
+    @IBAction func unwindSegue(segue: UIStoryboardSegue) {
+        inputLoginTF.text = ""
+        inputPasswordTF.text = ""
+    }
     
     @IBAction func loginButtonActon(_ sender: Any) {
-        
-        if inputLoginTF.text != user || inputPasswordTF.text != password {
+        if inputLoginTF.text != person.login || inputPasswordTF.text != person.password {
             performSegue(withIdentifier: "chekRobot", sender: nil)
         } else {
-            performSegue(withIdentifier: "answer", sender: nil)
+            performSegue(withIdentifier: "answer", sender: person)
         }
     }
 

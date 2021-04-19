@@ -17,6 +17,6 @@ class UserInfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        greetingLabel.text = "Hello, \(person.name) \(person.surname)! 👻"
+        greetingLabel.text = "Hello, \(person.user.name) \(person.user.surname)! 👻"
     }
 }

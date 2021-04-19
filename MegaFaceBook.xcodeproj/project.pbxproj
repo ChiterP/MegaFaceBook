@@ -14,7 +14,7 @@
 		434A802626297490003FDC19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 434A802526297490003FDC19 /* Assets.xcassets */; };
 		434A802926297490003FDC19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434A802726297490003FDC19 /* LaunchScreen.storyboard */; };
 		434A803D262A0F6C003FDC19 /* CheckRobot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434A803C262A0F6C003FDC19 /* CheckRobot.storyboard */; };
-		434A8040262A1026003FDC19 /* QuestionHuman.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434A803F262A1026003FDC19 /* QuestionHuman.storyboard */; };
+		434A8040262A1026003FDC19 /* CheckRobot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434A803F262A1026003FDC19 /* CheckRobot.storyboard */; };
 		434A8044262A116F003FDC19 /* AnswerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434A8043262A116F003FDC19 /* AnswerStoryboard.storyboard */; };
 		434A8047262B3242003FDC19 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434A8046262B3242003FDC19 /* LoginViewController.swift */; };
 		5E169D23262B4321007BF5BE /* RobotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E169D22262B4321007BF5BE /* RobotViewController.swift */; };
@@ -31,9 +31,9 @@
 		434A802526297490003FDC19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		434A802826297490003FDC19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		434A802A26297490003FDC19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		434A803C262A0F6C003FDC19 /* CheckRobot.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = CheckRobot.storyboard; path = Base.lproj/CheckRobot.storyboard; sourceTree = "<group>"; };
-		434A803F262A1026003FDC19 /* QuestionHuman.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = QuestionHuman.storyboard; path = Base.lproj/QuestionHuman.storyboard; sourceTree = "<group>"; };
-		434A8043262A116F003FDC19 /* AnswerStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = AnswerStoryboard.storyboard; path = Base.lproj/AnswerStoryboard.storyboard; sourceTree = "<group>"; };
+		434A803C262A0F6C003FDC19 /* CheckRobot.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CheckRobot.storyboard; sourceTree = "<group>"; };
+		434A803F262A1026003FDC19 /* CheckRobot.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CheckRobot.storyboard; sourceTree = "<group>"; };
+		434A8043262A116F003FDC19 /* AnswerStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AnswerStoryboard.storyboard; sourceTree = "<group>"; };
 		434A8046262B3242003FDC19 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5E169D22262B4321007BF5BE /* RobotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotViewController.swift; sourceTree = "<group>"; };
 		7492EA96262BAEE300D4C620 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 			children = (
 				434A80222629748F003FDC19 /* Main.storyboard */,
 				434A803C262A0F6C003FDC19 /* CheckRobot.storyboard */,
-				434A803F262A1026003FDC19 /* QuestionHuman.storyboard */,
+				434A803F262A1026003FDC19 /* CheckRobot.storyboard */,
 				434A8043262A116F003FDC19 /* AnswerStoryboard.storyboard */,
 				434A802726297490003FDC19 /* LaunchScreen.storyboard */,
 			);
@@ -189,7 +189,7 @@
 				434A802926297490003FDC19 /* LaunchScreen.storyboard in Resources */,
 				434A8044262A116F003FDC19 /* AnswerStoryboard.storyboard in Resources */,
 				434A802626297490003FDC19 /* Assets.xcassets in Resources */,
-				434A8040262A1026003FDC19 /* QuestionHuman.storyboard in Resources */,
+				434A8040262A1026003FDC19 /* CheckRobot.storyboard in Resources */,
 				434A80242629748F003FDC19 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

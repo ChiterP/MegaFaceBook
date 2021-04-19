@@ -7,25 +7,31 @@
 
 import Foundation
 
-
 struct Person {
-    let name: String
-    let surname: String
     let login: String
-    let pass: String
-//    let authInfo: AuthInfo
+    let password: String
+    let user: User
+    
+    static func getPersonData() -> Person {
+        Person(
+            login: "12",
+            password: "23",
+            user: User.getUser()
+        )
+    }
 }
 
-//struct AuthInfo {
-//
-//}
-
-
-extension Person {
-    static func getPerson() -> [Person] {
-        [
-            Person(name: "Alberto ", surname: "Ruiz", login: "admin", pass: "admin")
-        ]
+struct User {
+    let name: String
+    let surname: String
+    let image: String
+    
+    var fullName: String {
+        "\(name) \(surname)"
+    }
+    
+    static func getUser() -> User {
+        User(name: "Alexey", surname: "Sergeytsev", image: "SwiftImage")
     }
 }
 
