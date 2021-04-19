@@ -19,6 +19,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNR-ST-ZXp">
                                 <rect key="frame" x="272" y="64" width="32" height="30"/>
                                 <state key="normal" title="Help"/>
+                                <connections>
+                                    <action selector="helpButtonAction" destination="g8h-tZ-YU7" eventType="touchUpInside" id="lNm-dw-lw3"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="Y6O-ez-iVh">
                                 <rect key="frame" x="85" y="180" width="150" height="208"/>

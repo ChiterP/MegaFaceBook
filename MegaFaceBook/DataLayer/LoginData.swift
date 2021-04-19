@@ -31,7 +31,7 @@ struct User {
     }
     
     static func getUser() -> User {
-        User(name: "Alexey", surname: "Sergeytsev", image: "SwiftImage")
+        User(name: "Admin", surname: "Administrator", image: "SwiftImage")
     }
 }
 
