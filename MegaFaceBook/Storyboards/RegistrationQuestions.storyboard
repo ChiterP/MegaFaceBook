@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Отлично! Давайте познакомимся!-->
+        <scene sceneID="mOa-bt-Em5">
+            <objects>
+                <viewController id="jix-yz-GEz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N9v-t3-RJs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Nte-vH-uVn">
+                                <rect key="frame" x="16" y="128" width="382" height="34"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sgF-5c-J2i">
+                                        <rect key="frame" x="0.0" y="0.0" width="186" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Фамилию" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="75R-pZ-jy6">
+                                        <rect key="frame" x="196" y="0.0" width="186" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Для начала расскажите как вас зовут?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5az-fy-vtE">
+                                <rect key="frame" x="16" y="98" width="382" height="18"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Теперь для регистрации надо придумать Логин и Пароль, по которым будет осуществляться вход." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kH3-uE-NCX">
+                                <rect key="frame" x="16" y="244" width="382" height="36"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wd4-hj-heu">
+                                <rect key="frame" x="16" y="290" width="382" height="34"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9ml-cn-bl7">
+                                        <rect key="frame" x="0.0" y="0.0" width="186" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qvZ-bG-hAx">
+                                        <rect key="frame" x="196" y="0.0" width="186" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Также нам понадобиться Ваш e-mail:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2fQ-A7-GSd">
+                                <rect key="frame" x="16" y="172" width="382" height="18"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y23-Gw-GBu">
+                                <rect key="frame" x="30" y="200" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uIJ-WD-IBT">
+                                <rect key="frame" x="16" y="334" width="382" height="67"/>
+                                <string key="text">С обязательной частью мы закончили! Теперь по желаюнию можете рассказать нам и другим пользователям немного о себе - ваши увлечения - музыка, фильмы, игры или хобби.</string>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Расскажите о себе" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="73z-jk-xms">
+                                <rect key="frame" x="16" y="411" width="382" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="5xr-hZ-r4h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="b2F-L3-VyF"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="b2F-L3-VyF" firstAttribute="trailing" secondItem="2fQ-A7-GSd" secondAttribute="trailing" constant="16" id="23A-U6-6lS"/>
+                            <constraint firstItem="uIJ-WD-IBT" firstAttribute="top" secondItem="wd4-hj-heu" secondAttribute="bottom" constant="10" id="3H3-W2-bew"/>
+                            <constraint firstItem="b2F-L3-VyF" firstAttribute="trailing" secondItem="5az-fy-vtE" secondAttribute="trailing" constant="16" id="5IS-6U-Ozc"/>
+                            <constraint firstItem="kH3-uE-NCX" firstAttribute="leading" secondItem="b2F-L3-VyF" secondAttribute="leading" constant="16" id="67H-jp-1sP"/>
+                            <constraint firstItem="5az-fy-vtE" firstAttribute="top" secondItem="b2F-L3-VyF" secondAttribute="top" constant="10" id="9s1-zl-lKd"/>
+                            <constraint firstAttribute="trailing" secondItem="wd4-hj-heu" secondAttribute="trailing" constant="16" id="Ao3-vf-XTL"/>
+                            <constraint firstItem="y23-Gw-GBu" firstAttribute="leading" secondItem="b2F-L3-VyF" secondAttribute="leading" constant="30" id="GCM-iE-KXA"/>
+                            <constraint firstItem="kH3-uE-NCX" firstAttribute="top" secondItem="y23-Gw-GBu" secondAttribute="bottom" constant="10" id="GLO-4Y-MLX"/>
+                            <constraint firstItem="5az-fy-vtE" firstAttribute="leading" secondItem="b2F-L3-VyF" secondAttribute="leading" constant="16" id="Jaw-v4-AzN"/>
+                            <constraint firstItem="2fQ-A7-GSd" firstAttribute="leading" secondItem="b2F-L3-VyF" secondAttribute="leading" constant="16" id="Qlc-nr-ojS"/>
+                            <constraint firstItem="y23-Gw-GBu" firstAttribute="top" secondItem="2fQ-A7-GSd" secondAttribute="bottom" constant="10" id="SNg-PA-97s"/>
+                            <constraint firstAttribute="trailing" secondItem="Nte-vH-uVn" secondAttribute="trailing" constant="16" id="Uar-nd-SHu"/>
+                            <constraint firstItem="b2F-L3-VyF" firstAttribute="trailing" secondItem="uIJ-WD-IBT" secondAttribute="trailing" constant="16" id="eYn-Y7-Mxn"/>
+                            <constraint firstItem="Nte-vH-uVn" firstAttribute="top" secondItem="b2F-L3-VyF" secondAttribute="top" constant="40" id="eu0-4i-WzL"/>
+                            <constraint firstItem="73z-jk-xms" firstAttribute="top" secondItem="uIJ-WD-IBT" secondAttribute="bottom" constant="10" id="fpC-PR-ES5"/>
+                            <constraint firstItem="2fQ-A7-GSd" firstAttribute="top" secondItem="Nte-vH-uVn" secondAttribute="bottom" constant="10" id="j7E-oT-TeR"/>
+                            <constraint firstItem="Nte-vH-uVn" firstAttribute="centerX" secondItem="N9v-t3-RJs" secondAttribute="centerX" id="jww-L7-lnt"/>
+                            <constraint firstItem="Nte-vH-uVn" firstAttribute="leading" secondItem="b2F-L3-VyF" secondAttribute="leading" constant="16" id="qNr-IT-HeS"/>
+                            <constraint firstItem="wd4-hj-heu" firstAttribute="leading" secondItem="b2F-L3-VyF" secondAttribute="leading" constant="16" id="rqb-Ss-BTL"/>
+                            <constraint firstAttribute="trailing" secondItem="kH3-uE-NCX" secondAttribute="trailing" constant="16" id="tpR-JK-etX"/>
+                            <constraint firstItem="b2F-L3-VyF" firstAttribute="trailing" secondItem="y23-Gw-GBu" secondAttribute="trailing" constant="30" id="ujo-88-nwZ"/>
+                            <constraint firstItem="b2F-L3-VyF" firstAttribute="trailing" secondItem="73z-jk-xms" secondAttribute="trailing" constant="16" id="vtv-8p-4aY"/>
+                            <constraint firstItem="wd4-hj-heu" firstAttribute="top" secondItem="kH3-uE-NCX" secondAttribute="bottom" constant="10" id="xTO-Xx-N8r"/>
+                            <constraint firstItem="73z-jk-xms" firstAttribute="leading" secondItem="b2F-L3-VyF" secondAttribute="leading" constant="16" id="y5i-Lb-52A"/>
+                            <constraint firstItem="uIJ-WD-IBT" firstAttribute="leading" secondItem="b2F-L3-VyF" secondAttribute="leading" constant="16" id="ztR-xJ-JLU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Отлично! Давайте познакомимся!" id="AYX-aI-FaL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XDa-MV-uVT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="941.25" y="111.97183098591549"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Cjh-3n-8NL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ceE-B5-4kq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DA9-7d-gYV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jix-yz-GEz" kind="relationship" relationship="rootViewController" id="MrU-A7-WzI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bjS-XP-oBR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="113.02816901408451"/>
+        </scene>
+    </scenes>
+</document>

@@ -19,6 +19,7 @@
 		434A8047262B3242003FDC19 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434A8046262B3242003FDC19 /* LoginViewController.swift */; };
 		5E169D23262B4321007BF5BE /* RobotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E169D22262B4321007BF5BE /* RobotViewController.swift */; };
 		7492EA97262BAEE300D4C620 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7492EA96262BAEE300D4C620 /* UserInfoViewController.swift */; };
+		84AD226B262DEB2A00B04C36 /* RegistrationQuestions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AD226A262DEB2A00B04C36 /* RegistrationQuestions.storyboard */; };
 		C19E22F5262B80F4003D2BD1 /* LoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19E22F4262B80F4003D2BD1 /* LoginData.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		434A8046262B3242003FDC19 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5E169D22262B4321007BF5BE /* RobotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotViewController.swift; sourceTree = "<group>"; };
 		7492EA96262BAEE300D4C620 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		84AD226A262DEB2A00B04C36 /* RegistrationQuestions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegistrationQuestions.storyboard; sourceTree = "<group>"; };
 		C19E22F4262B80F4003D2BD1 /* LoginData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +100,7 @@
 				434A803F262A1026003FDC19 /* CheckRobot.storyboard */,
 				434A8043262A116F003FDC19 /* AnswerStoryboard.storyboard */,
 				434A802726297490003FDC19 /* LaunchScreen.storyboard */,
+				84AD226A262DEB2A00B04C36 /* RegistrationQuestions.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				434A802926297490003FDC19 /* LaunchScreen.storyboard in Resources */,
 				434A8044262A116F003FDC19 /* AnswerStoryboard.storyboard in Resources */,
 				434A802626297490003FDC19 /* Assets.xcassets in Resources */,
+				84AD226B262DEB2A00B04C36 /* RegistrationQuestions.storyboard in Resources */,
 				434A8040262A1026003FDC19 /* CheckRobot.storyboard in Resources */,
 				434A80242629748F003FDC19 /* Main.storyboard in Resources */,
 			);
