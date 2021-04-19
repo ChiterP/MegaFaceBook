@@ -19,6 +19,9 @@
                                 <rect key="frame" x="240" y="16" width="64" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Log Out"/>
+                                <connections>
+                                    <segue destination="In1-ox-35g" kind="unwind" unwindAction="unwindSegueWithSegue:" id="cFk-MJ-841"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, User! 👻" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZm-HQ-XYg">
                                 <rect key="frame" x="81.5" y="80" width="157" height="30"/>
@@ -35,25 +38,36 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OmO-Bh-AKL">
+                                <rect key="frame" x="35" y="286" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="OmO-Bh-AKL" secondAttribute="height" multiplier="1:1" id="bxh-lV-nWQ"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="diC-pu-qqV"/>
                         <color key="backgroundColor" red="0.88587105274200439" green="0.8773534893989563" blue="0.96439534425735474" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="diC-pu-qqV" firstAttribute="trailing" secondItem="Y8x-UJ-RUO" secondAttribute="trailing" constant="16" id="1oL-jM-tBS"/>
                             <constraint firstItem="Y8x-UJ-RUO" firstAttribute="top" secondItem="diC-pu-qqV" secondAttribute="top" constant="16" id="5BZ-2C-Tq1"/>
+                            <constraint firstItem="OmO-Bh-AKL" firstAttribute="centerX" secondItem="diC-pu-qqV" secondAttribute="centerX" id="9cD-26-k12"/>
                             <constraint firstItem="diC-pu-qqV" firstAttribute="trailing" secondItem="0Ov-2n-kYJ" secondAttribute="trailing" constant="16" id="AIl-TL-F0R"/>
+                            <constraint firstItem="diC-pu-qqV" firstAttribute="bottom" secondItem="OmO-Bh-AKL" secondAttribute="bottom" constant="32" id="JnG-Y8-q8q"/>
                             <constraint firstItem="CZm-HQ-XYg" firstAttribute="centerX" secondItem="diC-pu-qqV" secondAttribute="centerX" id="Qxr-JN-ZfT"/>
                             <constraint firstItem="0Ov-2n-kYJ" firstAttribute="top" secondItem="CZm-HQ-XYg" secondAttribute="bottom" constant="50" id="UWC-gj-Gj5"/>
                             <constraint firstItem="0Ov-2n-kYJ" firstAttribute="leading" secondItem="diC-pu-qqV" secondAttribute="leading" constant="16" id="b63-fC-O8N"/>
                             <constraint firstItem="CZm-HQ-XYg" firstAttribute="top" secondItem="Y8x-UJ-RUO" secondAttribute="bottom" constant="30" id="dFA-yd-eLr"/>
+                            <constraint firstItem="OmO-Bh-AKL" firstAttribute="width" secondItem="viu-dB-YXR" secondAttribute="height" multiplier="125:284" id="deG-32-s9T"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="greetingLabel" destination="CZm-HQ-XYg" id="axa-0D-pHX"/>
+                        <outlet property="userImage" destination="OmO-Bh-AKL" id="kAb-iE-Zkf"/>
                         <outlet property="userInfoLabel" destination="0Ov-2n-kYJ" id="ujf-Vq-tDV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0uM-Li-pUX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="In1-ox-35g" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="316.875" y="77.112676056338032"/>
         </scene>
