@@ -16,46 +16,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Отметь на фото все машины" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBq-rJ-rHB">
-                                <rect key="frame" x="16" y="40" width="228" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="auto1" translatesAutoresizingMaskIntoConstraints="NO" id="grg-4L-YuG">
-                                <rect key="frame" x="40" y="90" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="auto2" translatesAutoresizingMaskIntoConstraints="NO" id="UOp-m4-9I5">
-                                <rect key="frame" x="40" y="391" width="240" height="132"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="train2" translatesAutoresizingMaskIntoConstraints="NO" id="Sra-eh-wWw">
-                                <rect key="frame" x="40" y="233" width="240" height="144"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="63" translatesAutoresizingMaskIntoConstraints="NO" id="yPS-Kx-DCy">
+                                <rect key="frame" x="46" y="21" width="228" height="526.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Отметь на фото все машины" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBq-rJ-rHB">
+                                        <rect key="frame" x="0.0" y="0.0" width="228" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RYI-l6-gAR">
+                                        <rect key="frame" x="14" y="83.5" width="200" height="350"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQ6-YC-qKa">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="110"/>
+                                                <state key="normal" image="auto1"/>
+                                                <connections>
+                                                    <action selector="selectButton:" destination="TBw-Lw-fgt" eventType="touchUpInside" id="SIq-WW-tcs"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbY-vd-yCC">
+                                                <rect key="frame" x="0.0" y="120" width="200" height="110"/>
+                                                <state key="normal" image="train2"/>
+                                                <connections>
+                                                    <action selector="selectButton:" destination="TBw-Lw-fgt" eventType="touchUpInside" id="9Ld-ST-Lzg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zep-Kt-QYY">
+                                                <rect key="frame" x="0.0" y="240" width="200" height="110"/>
+                                                <state key="normal" image="auto2"/>
+                                                <connections>
+                                                    <action selector="selectButton:" destination="TBw-Lw-fgt" eventType="touchUpInside" id="ZRn-LO-dir"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="fHr-qT-5Vg"/>
+                                            <constraint firstAttribute="height" constant="350" id="w1w-2f-vGh"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u38-DN-3Zi">
+                                        <rect key="frame" x="98" y="496.5" width="32" height="30"/>
+                                        <state key="normal" title="Next"/>
+                                        <connections>
+                                            <action selector="selectDoneButton" destination="TBw-Lw-fgt" eventType="touchUpInside" id="1eu-99-TlT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-vU-9qb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="qhm-be-bfD" appends="YES" id="hYv-wb-bpW"/>
-                        </connections>
+                        <constraints>
+                            <constraint firstItem="yPS-Kx-DCy" firstAttribute="centerX" secondItem="DD1-GS-6GH" secondAttribute="centerX" id="Bpo-tp-a1r"/>
+                            <constraint firstItem="yPS-Kx-DCy" firstAttribute="centerY" secondItem="DD1-GS-6GH" secondAttribute="centerY" id="a5X-fw-kac"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="autoFirtstImage" destination="grg-4L-YuG" id="LjQ-L5-5NC"/>
-                        <outlet property="autoSecondImage" destination="UOp-m4-9I5" id="Tg7-wO-XVO"/>
-                        <outlet property="labelUI" destination="RBq-rJ-rHB" id="ojd-xJ-RMK"/>
-                        <outlet property="trainFirstIMAGE" destination="Sra-eh-wWw" id="2f5-mg-1qG"/>
+                        <outlet property="autoFirstButton" destination="IQ6-YC-qKa" id="9sO-3O-MZt"/>
+                        <outlet property="autoSecondButton" destination="zep-Kt-QYY" id="l6F-1s-8nX"/>
+                        <outlet property="doneButton" destination="u38-DN-3Zi" id="gEm-xv-ug8"/>
+                        <outlet property="otherImageButton" destination="pbY-vd-yCC" id="yIx-WP-qbm"/>
+                        <outlet property="titleLabel" destination="RBq-rJ-rHB" id="Ihi-pF-myZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qzp-yK-F6A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="qhm-be-bfD">
-                    <connections>
-                        <action selector="getTapImage:" destination="TBw-Lw-fgt" id="B4x-0b-19f"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-426" y="184"/>
         </scene>
