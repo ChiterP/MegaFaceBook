@@ -64,6 +64,14 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dK-6x-2ZW">
+                                <rect key="frame" x="63.5" y="266" width="193" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Начать регистрацию"/>
+                                <connections>
+                                    <segue destination="Xvu-LI-8D7" kind="push" id="xaM-db-z13"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-vU-9qb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -71,6 +79,8 @@
                         <constraints>
                             <constraint firstItem="yPS-Kx-DCy" firstAttribute="centerX" secondItem="DD1-GS-6GH" secondAttribute="centerX" id="Bpo-tp-a1r"/>
                             <constraint firstItem="yPS-Kx-DCy" firstAttribute="centerY" secondItem="DD1-GS-6GH" secondAttribute="centerY" id="a5X-fw-kac"/>
+                            <constraint firstItem="3dK-6x-2ZW" firstAttribute="centerY" secondItem="DD1-GS-6GH" secondAttribute="centerY" id="ggB-T3-4kk"/>
+                            <constraint firstItem="3dK-6x-2ZW" firstAttribute="centerX" secondItem="DD1-GS-6GH" secondAttribute="centerX" id="xic-5d-Plm"/>
                         </constraints>
                     </view>
                     <connections>
@@ -78,6 +88,8 @@
                         <outlet property="autoSecondButton" destination="zep-Kt-QYY" id="l6F-1s-8nX"/>
                         <outlet property="doneButton" destination="u38-DN-3Zi" id="gEm-xv-ug8"/>
                         <outlet property="otherImageButton" destination="pbY-vd-yCC" id="yIx-WP-qbm"/>
+                        <outlet property="stackWithAllItems" destination="yPS-Kx-DCy" id="Z6M-dZ-Won"/>
+                        <outlet property="startRegistrationButton" destination="3dK-6x-2ZW" id="56I-SF-WYV"/>
                         <outlet property="titleLabel" destination="RBq-rJ-rHB" id="Ihi-pF-myZ"/>
                     </connections>
                 </viewController>
@@ -85,33 +97,15 @@
             </objects>
             <point key="canvasLocation" x="-426" y="184"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="fOM-Qs-GMO">
+        <!--RegistrationQuestions-->
+        <scene sceneID="Xo1-Lg-eXC">
             <objects>
-                <viewController id="CE4-NG-u0K" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="CbT-uv-15R">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="ojh-Rn-3QM"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <connections>
-                        <segue destination="vKa-G9-5M9" kind="show" id="Re0-iO-uXl"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="86z-Oh-38X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="233" y="184"/>
-        </scene>
-        <!--QuestionHuman-->
-        <scene sceneID="Xja-Jk-sE0">
-            <objects>
-                <viewControllerPlaceholder storyboardName="QuestionHuman" id="vKa-G9-5M9" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="ULf-oD-hrs"/>
+                <viewControllerPlaceholder storyboardName="RegistrationQuestions" id="Xvu-LI-8D7" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="GH5-Zm-gMd"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xTj-RM-oNY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wet-cD-p3m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1046" y="184"/>
+            <point key="canvasLocation" x="288" y="173"/>
         </scene>
     </scenes>
     <resources>

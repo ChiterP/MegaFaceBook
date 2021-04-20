@@ -10,6 +10,9 @@ import UIKit
 class RobotViewController: UIViewController {
     
     
+    @IBOutlet var startRegistrationButton: UIButton!
+    
+    @IBOutlet var stackWithAllItems: UIStackView!
     @IBOutlet var titleLabel: UILabel!
     
     @IBOutlet var autoFirstButton: UIButton!
@@ -24,7 +27,7 @@ class RobotViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        startRegistrationButton.isHidden = true
     }
 
     @IBAction func selectButton(_ sender: UIButton) {
@@ -78,6 +81,9 @@ class RobotViewController: UIViewController {
                 currenPage = 0
                 countOfAutoImage = 0
                 countOfOtherImage = 0
+                stackWithAllItems.isHidden = true
+                startRegistrationButton.isHidden = false
+                
             }
         }
     }
