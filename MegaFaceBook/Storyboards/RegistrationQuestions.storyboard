@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Registration View Controller-->
         <scene sceneID="X6S-Je-aLJ">
             <objects>
-                <viewController id="6en-ex-FhJ" sceneMemberID="viewController">
+                <viewController id="6en-ex-FhJ" customClass="RegistrationViewController" customModule="MegaFaceBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Oox-RR-Kf0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -104,16 +104,22 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="dmq-Jw-4Ct">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="dmq-Jw-4Ct" userLabel="Stack View Buttoms">
                                 <rect key="frame" x="20" y="518" width="280" height="30"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PI4-9e-0xC">
-                                        <rect key="frame" x="0.0" y="0.0" width="77" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PI4-9e-0xC">
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="30"/>
                                         <state key="normal" title="Отмена"/>
+                                        <connections>
+                                            <segue destination="YHe-pA-ZEM" kind="unwind" unwindAction="unwindSegueWithSegue:" id="WrG-sC-2mL"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Srl-tA-f5E">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Srl-tA-f5E">
                                         <rect key="frame" x="147" y="0.0" width="133" height="30"/>
                                         <state key="normal" title="Зарегистрировать"/>
+                                        <connections>
+                                            <action selector="RegistationButton:" destination="6en-ex-FhJ" eventType="touchUpInside" id="re0-qn-Zw3"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -141,8 +147,21 @@
                             <constraint firstItem="RF7-qV-B1F" firstAttribute="bottom" secondItem="dmq-Jw-4Ct" secondAttribute="bottom" constant="20" id="z7Y-XA-26h"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="aboutUserStackView" destination="mdQ-Cn-fEK" id="n9x-3T-h7E"/>
+                        <outlet property="aboutUserTextField" destination="daU-5K-xIL" id="laE-pk-Lqi"/>
+                        <outlet property="emailStackView" destination="TWu-UI-HTr" id="fgj-7U-6XB"/>
+                        <outlet property="emailTextField" destination="670-wa-WOP" id="PGe-xk-PAZ"/>
+                        <outlet property="lastnameTextField" destination="wE0-p1-WcR" id="Bns-km-ax5"/>
+                        <outlet property="loginStackView" destination="F7X-dR-LcE" id="AxV-md-0uP"/>
+                        <outlet property="loginTextField" destination="S57-cT-2TX" id="Rfa-C4-Aaj"/>
+                        <outlet property="nameStackView" destination="Z3i-id-WoB" id="fqU-jN-pTL"/>
+                        <outlet property="nameTextField" destination="bVB-7V-zfn" id="5C6-jz-eov"/>
+                        <outlet property="passwordTextField" destination="rep-JZ-ZUO" id="UUm-5O-OF8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pTk-TK-PzG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="YHe-pA-ZEM" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1734" y="140"/>
         </scene>
