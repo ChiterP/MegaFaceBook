@@ -31,12 +31,18 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bVB-7V-zfn">
                                                 <rect key="frame" x="0.0" y="0.0" width="139" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="6en-ex-FhJ" id="wg7-vi-ctC"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Фамилия" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wE0-p1-WcR">
                                                 <rect key="frame" x="149" y="0.0" width="139" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="family-name"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="6en-ex-FhJ" id="t9w-Wn-wuS"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -57,12 +63,18 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S57-cT-2TX">
                                                 <rect key="frame" x="0.0" y="0.0" width="139" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" textContentType="username"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="6en-ex-FhJ" id="ExX-2O-lrc"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rep-JZ-ZUO">
                                                 <rect key="frame" x="149" y="0.0" width="139" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="6en-ex-FhJ" id="2Gq-uh-2Nh"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -85,6 +97,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="6en-ex-FhJ" id="NdL-0y-tkT"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -100,7 +115,10 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="670-wa-WOP">
                                         <rect key="frame" x="0.0" y="23" width="288" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="email"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="6en-ex-FhJ" id="AlZ-XA-wla"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -114,7 +132,7 @@
                                             <segue destination="YHe-pA-ZEM" kind="unwind" unwindAction="unwindSegueWithSegue:" id="WrG-sC-2mL"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Srl-tA-f5E">
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Srl-tA-f5E">
                                         <rect key="frame" x="147" y="0.0" width="133" height="30"/>
                                         <state key="normal" title="Зарегистрировать"/>
                                         <connections>
@@ -158,6 +176,7 @@
                         <outlet property="nameStackView" destination="Z3i-id-WoB" id="fqU-jN-pTL"/>
                         <outlet property="nameTextField" destination="bVB-7V-zfn" id="5C6-jz-eov"/>
                         <outlet property="passwordTextField" destination="rep-JZ-ZUO" id="UUm-5O-OF8"/>
+                        <outlet property="registrationButton" destination="Srl-tA-f5E" id="Q7t-M9-hye"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pTk-TK-PzG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

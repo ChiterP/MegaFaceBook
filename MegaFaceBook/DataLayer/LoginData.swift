@@ -8,14 +8,22 @@
 import Foundation
 
 struct Person {
-    let login: String
-    let password: String
-    let user: User
+    var name: String
+    var lastName: String
+    var email: String
+    var login: String
+    var password: String
+    var aboutUser: String
+    var user: User
     
     static func getPersonData() -> Person {
         Person(
+            name: "",
+            lastName: "",
+            email: "",
             login: "12",
             password: "23",
+            aboutUser: "",
             user: User.getUser()
         )
     }
@@ -31,7 +39,11 @@ struct User {
     }
     
     static func getUser() -> User {
-        User(name: "Admin", surname: "Administrator", image: "SwiftImage")
+        User(
+            name: "Admin",
+            surname: "Administrator",
+            image: "SwiftImage"
+        )
     }
 }
 

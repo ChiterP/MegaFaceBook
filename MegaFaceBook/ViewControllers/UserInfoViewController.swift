@@ -15,6 +15,7 @@ class UserInfoViewController: UIViewController {
     @IBOutlet weak var userImage: UIImageView!
     
     var person: Person!
+    var user: Person!       // передача зарегестрированного экземпляра Юзера для отображения
     
     private let primaryColor = UIColor(
         red: 210 / 255,

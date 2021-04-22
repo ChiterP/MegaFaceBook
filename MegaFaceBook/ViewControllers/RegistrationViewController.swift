@@ -25,54 +25,61 @@ class RegistrationViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var aboutUserTextField: UITextField!
     
+    @IBOutlet weak var registrationButton: UIButton!
+    
     
     // MARK: - Private properties
-    private let person = Person.getPersonData()
-    
+    //private let person = Person.getPersonData()
+    var user: Person!
     
     // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupUI()
     }
     
-    
-    
-    
     // MARK: - Navigation
-    
-  /*  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let userInfotVC = segue.destination as? UserInfoViewController else { return }
-        userInfotVC.person = person
-    }*/
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let UserInfoVC = segue.destination as? UserInfoViewController else { return }
+        UserInfoVC.user = user
+    }
+
     
     // MARK: - IBActions
     @IBAction func RegistationButton(_ sender: Any) {
+        view.endEditing(true)
     }
     
-    
-
-    
-    
-    
-    
-    
-    // MARK: - Private Methods
-    
-    
 }
-
-
-
-
-
-/*
- Для возврата на первый экран через "ОТМЕНА", необходимо реализовать в классе первого StoryBoard’а  unwind(Segue).
-Иначе не избежать повторного открывания этого окна вместо возврата к старому.
- 
- class IntroductionViewController: UIViewController {
-         
-     @IBAction func unwind(segue: UIStoryboardSegue) {}
- }
- 
- */
+    // MARK: - Private Methods
+extension RegistrationViewController: UITextFieldDelegate {
+    private func setupUI() {
+        for stackView in [emailStackView, loginStackView, aboutUserStackView] {
+            stackView?.isHidden.toggle()        //прячем все  Стеки, кроме итого что с именем юзера
+        }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        guard let userData = textField.text else { return }
+        //guard let userData != "" else { return }
+                
+        switch textField {
+        case nameTextField:
+            user.name = userData
+        case lastnameTextField:
+            user.lastName = userData
+            emailStackView.isHidden = false
+        case emailTextField:
+            user.email = userData
+            loginStackView.isHidden = false
+        case loginTextField:
+            user.login = userData
+        case passwordTextField:
+            user.password = userData
+            aboutUserStackView.isHidden = false
+        default:
+            user.aboutUser = userData
+            registrationButton.isEnabled = true
+        }
+    }
+}
