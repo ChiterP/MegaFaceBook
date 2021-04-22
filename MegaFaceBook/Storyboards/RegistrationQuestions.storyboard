@@ -19,7 +19,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Z3i-id-WoB" userLabel="Stack View Name">
                                 <rect key="frame" x="16" y="10" width="288" height="73"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Для начала расскажите как вас зовут?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nj-vM-xtv">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Для начала расскажите как вас зовут?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nj-vM-xtv">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="34"/>
                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
                                         <nil key="textColor"/>
@@ -51,7 +51,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="F7X-dR-LcE" userLabel="Stack View Login &amp; Pass">
                                 <rect key="frame" x="16" y="150" width="288" height="98"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Теперь для регистрации надо придумать логин и пароль, по которым будет осуществляться вход." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0u-BI-NhW">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Теперь для регистрации надо придумать логин и пароль, по которым будет осуществляться вход." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0u-BI-NhW">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="54"/>
                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
                                         <nil key="textColor"/>
@@ -137,6 +137,7 @@
                                         <state key="normal" title="Зарегистрировать"/>
                                         <connections>
                                             <action selector="RegistationButton:" destination="6en-ex-FhJ" eventType="touchUpInside" id="re0-qn-Zw3"/>
+                                            <segue destination="0wO-Y4-0rl" kind="show" identifier="ShowUserInfoVC" id="hqk-w4-Nzf"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -183,6 +184,16 @@
                 <exit id="YHe-pA-ZEM" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1734" y="140"/>
+        </scene>
+        <!--AnswerStoryboard-->
+        <scene sceneID="rli-5u-uuG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AnswerStoryboard" id="0wO-Y4-0rl" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="GFd-ZP-9g8"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mla-or-2ae" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2623" y="142"/>
         </scene>
     </scenes>
     <resources>

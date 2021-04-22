@@ -43,14 +43,14 @@ class RegistrationViewController: UIViewController {
         guard let UserInfoVC = segue.destination as? UserInfoViewController else { return }
         UserInfoVC.user = user
     }
-
     
     // MARK: - IBActions
     @IBAction func RegistationButton(_ sender: Any) {
         view.endEditing(true)
+        performSegue(withIdentifier: "ShowUserInfoVC", sender: nil)
     }
-    
 }
+
     // MARK: - Private Methods
 extension RegistrationViewController: UITextFieldDelegate {
     private func setupUI() {
@@ -60,8 +60,17 @@ extension RegistrationViewController: UITextFieldDelegate {
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        guard let userData = textField.text else { return }
-        //guard let userData != "" else { return }
+        guard let userData: String = textField.text else {
+            showAlert(with: "Внимание!", and: "Вы не заполнили текущее поле для ввода")
+            textField.text = nil
+            return
+        }
+        
+        guard userData != "" else {
+            showAlert(with: "Внимание!", and: "В текущем поле не может стоять пробел")
+            //textField.text = nil
+            return
+        }
                 
         switch textField {
         case nameTextField:
@@ -81,5 +90,10 @@ extension RegistrationViewController: UITextFieldDelegate {
             user.aboutUser = userData
             registrationButton.isEnabled = true
         }
+    }
+    
+    private func showAlert(with title: String, and message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        present(alert, animated: true)
     }
 }
