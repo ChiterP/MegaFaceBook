@@ -10,12 +10,12 @@ import UIKit
 class UserInfoViewController: UIViewController {
 
     @IBOutlet weak var greetingLabel: UILabel!
-    @IBOutlet weak var userInfoLabel: UILabel!
+    @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var infoLabel: UILabel!
     
     @IBOutlet weak var userImage: UIImageView!
     
-    var person: User!
-    var user: User!       // передача зарегестрированного экземпляра Юзера для отображения
+    var user: User!
     
     private let primaryColor = UIColor(
         red: 210 / 255,
@@ -34,20 +34,22 @@ class UserInfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.setHidesBackButton(true, animated: false)
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
         greetingLabel.text = "Hello, \(user.person.fullName)! 👻"
-        //showGreeting(for: person)
+        showGreeting(for: user)
+        infoLabel.text = user.person.aboutUser
     }
     
     override func viewWillLayoutSubviews() {
         userImage.image = UIImage(named: user.person.image )
     }
     
-    private func showGreeting(for person: Person) {
-        if user.person.name == "Admin" {
-            userInfoLabel.text = "Don't brake anything!"
+    private func showGreeting(for person: User) {
+        if user.person.name == "User" {
+            messageLabel.text = "Don't brake anything!"
         } else {
-            userInfoLabel.text = "We're sure you'll like our amazing app!"
+            messageLabel.text = "We're sure you'll like our amazing app!"
         }
     }
 }

@@ -41,7 +41,7 @@ class LoginViewController: UIViewController {
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let userInfotVC = segue.destination as? UserInfoViewController else { return }
-        userInfotVC.person = user
+        userInfotVC.user = user
     }
 
     @IBAction func unwindSegue(segue: UIStoryboardSegue) {
