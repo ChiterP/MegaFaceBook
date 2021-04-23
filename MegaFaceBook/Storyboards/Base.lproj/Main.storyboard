@@ -16,42 +16,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNR-ST-ZXp">
-                                <rect key="frame" x="272" y="64" width="32" height="30"/>
-                                <state key="normal" title="Help"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNR-ST-ZXp">
+                                <rect key="frame" x="279" y="64" width="25" height="24"/>
+                                <state key="normal">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
                                 <connections>
                                     <action selector="helpButtonAction" destination="g8h-tZ-YU7" eventType="touchUpInside" id="lNm-dw-lw3"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="Y6O-ez-iVh">
-                                <rect key="frame" x="85" y="180" width="150" height="208"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Y6O-ez-iVh">
+                                <rect key="frame" x="85" y="124" width="150" height="98"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите Login" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N4F-x4-gpI">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите Login" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="N4F-x4-gpI">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eAf-E9-PHh">
-                                        <rect key="frame" x="0.0" y="89" width="150" height="34"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите Password" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="eAf-E9-PHh">
+                                        <rect key="frame" x="0.0" y="64" width="150" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWC-9d-F31">
-                                        <rect key="frame" x="0.0" y="178" width="150" height="30"/>
-                                        <state key="normal" title="Log in"/>
-                                        <connections>
-                                            <action selector="loginButtonActon:" destination="g8h-tZ-YU7" eventType="touchUpInside" id="fpc-Kt-gLa"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWC-9d-F31">
+                                <rect key="frame" x="139" y="262" width="42" height="30"/>
+                                <state key="normal" title="Log in">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButtonActon:" destination="g8h-tZ-YU7" eventType="touchUpInside" id="fpc-Kt-gLa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="caK-tJ-0jk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Y6O-ez-iVh" firstAttribute="centerY" secondItem="bWW-G5-NMF" secondAttribute="centerY" id="Bnp-Be-jtG"/>
                             <constraint firstItem="Y6O-ez-iVh" firstAttribute="centerX" secondItem="bWW-G5-NMF" secondAttribute="centerX" id="Jzt-hY-qtg"/>
+                            <constraint firstItem="oWC-9d-F31" firstAttribute="centerX" secondItem="bWW-G5-NMF" secondAttribute="centerX" id="RWx-Ac-7fw"/>
                             <constraint firstItem="kNR-ST-ZXp" firstAttribute="top" secondItem="caK-tJ-0jk" secondAttribute="top" constant="20" id="T1Y-hx-dzz"/>
+                            <constraint firstItem="oWC-9d-F31" firstAttribute="top" secondItem="Y6O-ez-iVh" secondAttribute="bottom" constant="40" id="Xgr-3R-0H6"/>
+                            <constraint firstItem="Y6O-ez-iVh" firstAttribute="top" secondItem="caK-tJ-0jk" secondAttribute="top" constant="80" id="vmy-wz-DYd"/>
                             <constraint firstItem="caK-tJ-0jk" firstAttribute="trailing" secondItem="kNR-ST-ZXp" secondAttribute="trailing" constant="16" id="yEw-Xf-0vH"/>
                         </constraints>
                     </view>
@@ -210,6 +216,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1o8-wS-zzm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="systemGrayColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -222,8 +229,14 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

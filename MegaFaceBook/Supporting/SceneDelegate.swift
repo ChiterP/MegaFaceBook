@@ -10,6 +10,14 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    
+    private let primaryColor = UIColor(
+        red: 210 / 255,
+        green: 109 / 255,
+        blue: 128 / 255,
+        alpha: 1
+    )
+
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -17,6 +25,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        UINavigationBar.appearance().barTintColor = primaryColor
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
