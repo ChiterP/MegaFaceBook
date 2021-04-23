@@ -30,7 +30,7 @@ class RegistrationViewController: UIViewController {
     
     // MARK: - Private properties
     //private let person = Person.getPersonData()
-    var regUser: Person
+    var regUser = User(login: "", password: "", email: "", person: Person(name: "", lastName: "", aboutUser: "", image: ""))
     
     // MARK: - Override Methods
     override func viewDidLoad() {
@@ -74,9 +74,9 @@ extension RegistrationViewController: UITextFieldDelegate {
                 
         switch textField {
         case nameTextField:
-            regUser.name = userData
+            regUser.person.name = userData
         case lastnameTextField:
-            regUser.lastName = userData
+            regUser.person.lastName = userData
             emailStackView.isHidden = false
         case emailTextField:
             regUser.email = userData
@@ -87,7 +87,7 @@ extension RegistrationViewController: UITextFieldDelegate {
             regUser.password = userData
             aboutUserStackView.isHidden = false
         default:
-            regUser.aboutUser = userData
+            regUser.person.aboutUser = userData
             registrationButton.isEnabled = true
         }
     }

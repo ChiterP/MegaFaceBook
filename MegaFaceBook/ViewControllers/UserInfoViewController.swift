@@ -14,8 +14,8 @@ class UserInfoViewController: UIViewController {
     
     @IBOutlet weak var userImage: UIImageView!
     
-    var person: Person!
-    var user: Person!       // передача зарегестрированного экземпляра Юзера для отображения
+    var person: User!
+    var user: User!       // передача зарегестрированного экземпляра Юзера для отображения
     
     private let primaryColor = UIColor(
         red: 210 / 255,
@@ -35,16 +35,16 @@ class UserInfoViewController: UIViewController {
         super.viewDidLoad()
         
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
-        greetingLabel.text = "Hello, \(person.user.fullName)! 👻"
-        showGreeting(for: person)
+        greetingLabel.text = "Hello, \(user.person.fullName)! 👻"
+        //showGreeting(for: person)
     }
     
     override func viewWillLayoutSubviews() {
-        userImage.image = UIImage(named: person.user.image)
+        userImage.image = UIImage(named: user.person.image )
     }
     
     private func showGreeting(for person: Person) {
-        if person.user.name == "Admin" {
+        if user.person.name == "Admin" {
             userInfoLabel.text = "Don't brake anything!"
         } else {
             userInfoLabel.text = "We're sure you'll like our amazing app!"

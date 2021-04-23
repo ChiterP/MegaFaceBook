@@ -14,7 +14,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var inputPasswordTF: UITextField!
     
     // MARK: - Private properties
-    private let person = Person.getPersonData()
+    private let user = User.getUserData()
     
     private let primaryColor = UIColor(
         red: 210 / 255,
@@ -41,7 +41,7 @@ class LoginViewController: UIViewController {
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let userInfotVC = segue.destination as? UserInfoViewController else { return }
-        userInfotVC.person = person
+        userInfotVC.person = user
     }
 
     @IBAction func unwindSegue(segue: UIStoryboardSegue) {
@@ -59,10 +59,10 @@ class LoginViewController: UIViewController {
             return
         }
         
-        if inputLoginTF.text != person.login || inputPasswordTF.text != person.password {
+        if inputLoginTF.text != user.login || inputPasswordTF.text != user.password {
             performSegue(withIdentifier: "chekRobot", sender: nil)
         } else {
-            performSegue(withIdentifier: "answer", sender: person)
+            performSegue(withIdentifier: "answer", sender: user)
         }
     }
     

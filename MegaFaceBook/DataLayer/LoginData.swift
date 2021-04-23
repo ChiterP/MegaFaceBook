@@ -7,10 +7,10 @@
 
 
 struct User {
-    let login: String
-    let password: String
-    let email: String
-    let person: Person
+    var login: String
+    var password: String
+    var email: String
+    var person: Person
     
     static func getUserData() -> User {
         User(
@@ -23,16 +23,17 @@ struct User {
 }
 
 struct Person {
-    let name: String
-    let lastName: String
-    let aboutUser: String
+    var name: String
+    var lastName: String
+    var aboutUser: String
+    var image: String
     
     var fullName: String {
         "\(name) \(lastName)"
     }
     
     static func getPerson() -> Person {
-        Person(name: "Clark", lastName: "Kent", aboutUser: "Great man in small town")
+        Person(name: "Clark", lastName: "Kent", aboutUser: "Great man in small town", image: "")
     }
 }
 
