@@ -33,6 +33,8 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
+        inputLoginTF.backgroundColor = .clear
+        inputPasswordTF.backgroundColor = .clear
         
     }
       
