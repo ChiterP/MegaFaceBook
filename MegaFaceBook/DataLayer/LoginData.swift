@@ -5,7 +5,39 @@
 //  Created by Алексей Сергейцев on 4/17/21.
 //
 
-import Foundation
+
+struct User {
+    let login: String
+    let password: String
+    let email: String
+    let person: Person
+    
+    static func getUserData() -> User {
+        User(
+            login: "User",
+            password: "Password",
+            email: "swift@trudniy.ru",
+            person: Person.getPerson()
+        )
+    }
+}
+
+struct Person {
+    let name: String
+    let lastName: String
+    let aboutUser: String
+    
+    var fullName: String {
+        "\(name) \(lastName)"
+    }
+    
+    static func getPerson() -> Person {
+        Person(name: "Clark", lastName: "Kent", aboutUser: "Great man in small town")
+    }
+}
+
+
+/*import Foundation
 
 struct Person {
     var name: String
@@ -46,5 +78,6 @@ struct User {
         )
     }
 }
+*/
 
 
