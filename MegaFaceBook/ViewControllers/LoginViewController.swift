@@ -29,12 +29,10 @@ class LoginViewController: UIViewController {
     
     // MARK: IBActions
     @IBAction func loginButtonActon(_ sender: Any) {
-       
         if inputLoginTF.text == "" || inputPasswordTF.text == "" {
-            showAlert(
+            showAlertRegistration(
                 title: "Invalid login or password",
-                message: "Please, enter correct login and password",
-                textField: inputPasswordTF
+                message: "Ошибка заполения логина или пароля, пройдите регистрацию или закройте приложение"
             )
             return
         }
@@ -47,24 +45,40 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func helpButtonAction() {
-        
-        showAlert(
+        showAlertHelp(
             title: "Вход супер пользователем",
-            message: "Логин: Administrator \n Пароль: Admin",
-            textField: inputPasswordTF
+            message: "Логин: Administrator \n Пароль: Admin"
         )
     }
 }
 
 
 extension LoginViewController: UITextFieldDelegate{
-    private func showAlert(title: String, message: String, textField: UITextField? = nil) {
+    
+
+    private func showAlertRegistration(title: String, message: String, textField: UITextField? = nil) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+        let exitAction = UIAlertAction(title: "Закрыть", style: .default) { _ in
+        }
+        
+        let regAction = UIAlertAction(title: "Регистрация", style: .default) { _ in
+            self.performSegue(withIdentifier: "chekRobot", sender: nil)
+        }
+        
+        alert.addAction(regAction)
+        alert.addAction(exitAction)
+        present(alert, animated: true)
+    }
+
+    private func showAlertHelp(title: String, message: String, textField: UITextField? = nil) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Закрыть", style: .default) { _ in
             textField?.text = ""
         }
+        
         alert.addAction(okAction)
         present(alert, animated: true)
+
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

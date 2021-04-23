@@ -21,8 +21,8 @@ struct Person {
             name: "",
             lastName: "",
             email: "",
-            login: "12",
-            password: "23",
+            login: "Admin",
+            password: "Administrator",
             aboutUser: "",
             user: User.getUser()
         )
@@ -40,8 +40,8 @@ struct User {
     
     static func getUser() -> User {
         User(
-            name: "Admin",
-            surname: "Administrator",
+            name: "Алексей",
+            surname: "Командович",
             image: "SwiftImage"
         )
     }
