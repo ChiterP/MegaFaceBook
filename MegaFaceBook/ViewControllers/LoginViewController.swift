@@ -15,6 +15,26 @@ class LoginViewController: UIViewController {
     
     // MARK: - Private properties
     private let person = Person.getPersonData()
+    
+    private let primaryColor = UIColor(
+        red: 210 / 255,
+        green: 109 / 255,
+        blue: 128 / 255,
+        alpha: 1
+    )
+    private let secondaryColor = UIColor(
+        red: 107 / 255,
+        green: 148 / 255,
+        blue: 230 / 255,
+        alpha: 1
+    )
+    
+    // MARK: - Override methods
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
+        
+    }
       
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -55,7 +75,6 @@ class LoginViewController: UIViewController {
 
 extension LoginViewController: UITextFieldDelegate{
     
-
     private func showAlertRegistration(title: String, message: String, textField: UITextField? = nil) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let exitAction = UIAlertAction(title: "Закрыть", style: .default) { _ in
