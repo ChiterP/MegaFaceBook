@@ -20,13 +20,36 @@ class RobotViewController: UIViewController {
     @IBOutlet var autoSecondButton: UIButton!
     @IBOutlet var doneButton: UIButton!
     
-    var currenPage = 1
-    var countOfAutoImage = 0
-    var countOfOtherImage = 0
+    private var currenPage = 1
+    private var countOfAutoImage = 0
+    private var countOfOtherImage = 0
+    
+    private let primaryColor = UIColor(
+        red: 210 / 255,
+        green: 109 / 255,
+        blue: 128 / 255,
+        alpha: 1
+    )
+    private let secondaryColor = UIColor(
+        red: 107 / 255,
+        green: 148 / 255,
+        blue: 230 / 255,
+        alpha: 1
+    )
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationItem.setHidesBackButton(true, animated: false)
+        
+        autoFirstButton.layer.cornerRadius = autoFirstButton.frame.size.height / 6
+        otherImageButton.layer.cornerRadius = otherImageButton.frame.size.height / 6
+        autoSecondButton.layer.cornerRadius = autoSecondButton.frame.size.height / 6
+        
+        autoFirstButton.clipsToBounds = true
+        otherImageButton.clipsToBounds = true
+        autoSecondButton.clipsToBounds = true
+        
+        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
         startRegistrationButton.isHidden = true
     }
 
@@ -60,13 +83,14 @@ class RobotViewController: UIViewController {
             autoFirstButton.alpha = 1
             autoSecondButton.alpha = 1
             otherImageButton.alpha = 1
-            doneButton.setTitle("Done", for: .normal)
+            doneButton.setTitle("Проверка", for: .normal)
         default:
             if countOfAutoImage != 6 || countOfOtherImage != 0 {
                 currenPage = 0
                 countOfAutoImage = 0
                 countOfOtherImage = 0
-                showAlert(title: "Warning!" , message: "Похоже, что вы Робот, попробуйте еще раз!")
+                showAlert(title: "Warning!" ,
+                          message: "Похоже, что вы Робот, попробуйте еще раз!")
                 autoFirstButton.setImage(UIImage(named: "auto1"), for: .normal)
                 otherImageButton.setImage(UIImage(named: "train2"), for: .normal)
                 autoSecondButton.setImage(UIImage(named: "auto2"), for: .normal)
@@ -74,10 +98,11 @@ class RobotViewController: UIViewController {
                 autoFirstButton.alpha = 1
                 autoSecondButton.alpha = 1
                 otherImageButton.alpha = 1
-                doneButton.setTitle("Next", for: .normal)
+                doneButton.setTitle("Далее", for: .normal)
             }
             else {
-                showAlert(title: "Поздравляю!", message: "Можете продолжить регистрацию")
+                showAlert(title: "Поздравляю!",
+                          message: "Можете продолжить регистрацию")
                 currenPage = 0
                 countOfAutoImage = 0
                 countOfOtherImage = 0

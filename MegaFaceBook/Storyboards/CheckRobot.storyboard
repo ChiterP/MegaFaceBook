@@ -17,16 +17,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="63" translatesAutoresizingMaskIntoConstraints="NO" id="yPS-Kx-DCy">
-                                <rect key="frame" x="46" y="21" width="228" height="526.5"/>
+                                <rect key="frame" x="32.5" y="16" width="255" height="536"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Отметь на фото все машины" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBq-rJ-rHB">
-                                        <rect key="frame" x="0.0" y="0.0" width="228" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="255" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RYI-l6-gAR">
-                                        <rect key="frame" x="14" y="83.5" width="200" height="350"/>
+                                        <rect key="frame" x="27.5" y="87" width="200" height="350"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQ6-YC-qKa">
                                                 <rect key="frame" x="0.0" y="0.0" width="200" height="110"/>
@@ -56,8 +56,11 @@
                                         </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u38-DN-3Zi">
-                                        <rect key="frame" x="98" y="496.5" width="32" height="30"/>
-                                        <state key="normal" title="Next"/>
+                                        <rect key="frame" x="99" y="500" width="57" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="20"/>
+                                        <state key="normal" title="Далее">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="selectDoneButton" destination="TBw-Lw-fgt" eventType="touchUpInside" id="1eu-99-TlT"/>
                                         </connections>
@@ -65,9 +68,11 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dK-6x-2ZW">
-                                <rect key="frame" x="63.5" y="266" width="193" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Начать регистрацию"/>
+                                <rect key="frame" x="66" y="266" width="188" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="20"/>
+                                <state key="normal" title="Начать регистрацию">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="Xvu-LI-8D7" kind="push" id="xaM-db-z13"/>
                                 </connections>
