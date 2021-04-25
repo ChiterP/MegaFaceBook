@@ -73,16 +73,28 @@ extension RegistrationViewController: UITextFieldDelegate {
         }
     }
     
+    
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        switch textField {
+        case lastnameTextField: emailStackView.isHidden = false
+        case emailTextField: loginStackView.isHidden = false
+        case passwordTextField: aboutUserStackView.isHidden = false
+        default: registrationButton.isEnabled = true
+        }
+    }
+    
+    
     func textFieldDidEndEditing(_ textField: UITextField) {
-        guard let userData: String = textField.text else {
+        guard let userData = textField.text, !userData.isEmpty else {
             showAlert(with: "Внимание!", and: "Вы не заполнили текущее поле для ввода")
             textField.text = nil
             return
         }
         
-        guard userData != "" else {
+        guard userData != " " else {
             showAlert(with: "Внимание!", and: "В текущем поле не может стоять пробел")
-            //textField.text = nil
+            textField.text = nil
             return
         }
                 
@@ -91,23 +103,34 @@ extension RegistrationViewController: UITextFieldDelegate {
             regUser.person.name = userData
         case lastnameTextField:
             regUser.person.lastName = userData
-            emailStackView.isHidden = false
         case emailTextField:
+            guard validateEmail(enteredEmail: userData) else {
+                showAlert(with: "Внимание!", and: "Данные в текущем поле не корректны")
+                textField.text = nil
+                loginStackView.isHidden = true
+                return
+            }
             regUser.email = userData
-            loginStackView.isHidden = false
         case loginTextField:
             regUser.login = userData
         case passwordTextField:
             regUser.password = userData
-            aboutUserStackView.isHidden = false
         default:
             regUser.person.aboutUser = userData
-            registrationButton.isEnabled = true
         }
     }
     
     private func showAlert(with title: String, and message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Принято!", style: .default)
+        alert.addAction(okAction)
         present(alert, animated: true)
+    }
+    
+    // Проверка правильно введенного Е-мейла
+    func validateEmail(enteredEmail: String) -> Bool {
+        let emailFormat = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        let emailPredicate = NSPredicate(format:"SELF MATCHES %@", emailFormat)
+        return emailPredicate.evaluate(with: enteredEmail)
     }
 }
