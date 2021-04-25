@@ -46,7 +46,7 @@ class UserInfoViewController: UIViewController {
     }
     
     private func showGreeting(for person: User) {
-        if user.person.name == "User" {
+        if user.login == "User" {
             messageLabel.text = "Don't brake anything!"
         } else {
             messageLabel.text = "We're sure you'll like our amazing app!"
