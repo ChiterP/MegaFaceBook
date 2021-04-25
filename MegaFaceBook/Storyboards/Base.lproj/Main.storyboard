@@ -36,7 +36,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите Password" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="eAf-E9-PHh">
                                         <rect key="frame" x="0.0" y="64" width="150" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -53,7 +53,8 @@
                         <viewLayoutGuide key="safeArea" id="caK-tJ-0jk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Y6O-ez-iVh" firstAttribute="centerX" secondItem="bWW-G5-NMF" secondAttribute="centerX" id="Jzt-hY-qtg"/>
+                            <constraint firstItem="caK-tJ-0jk" firstAttribute="trailing" secondItem="Y6O-ez-iVh" secondAttribute="trailing" constant="85" id="0Ec-xO-t50"/>
+                            <constraint firstItem="Y6O-ez-iVh" firstAttribute="leading" secondItem="caK-tJ-0jk" secondAttribute="leading" constant="85" id="LOm-Zt-gsB"/>
                             <constraint firstItem="oWC-9d-F31" firstAttribute="centerX" secondItem="bWW-G5-NMF" secondAttribute="centerX" id="RWx-Ac-7fw"/>
                             <constraint firstItem="kNR-ST-ZXp" firstAttribute="top" secondItem="caK-tJ-0jk" secondAttribute="top" constant="20" id="T1Y-hx-dzz"/>
                             <constraint firstItem="oWC-9d-F31" firstAttribute="top" secondItem="Y6O-ez-iVh" secondAttribute="bottom" constant="40" id="Xgr-3R-0H6"/>

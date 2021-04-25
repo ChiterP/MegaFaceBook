@@ -33,9 +33,6 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
-        inputLoginTF.backgroundColor = .clear
-        inputPasswordTF.backgroundColor = .clear
-        
     }
       
     // MARK: - Navigation
@@ -69,7 +66,7 @@ class LoginViewController: UIViewController {
     @IBAction func helpButtonAction() {
         showAlertHelp(
             title: "Вход супер пользователем",
-            message: "Логин: Administrator \n Пароль: Admin"
+            message: "Логин: \(user.login)  \n Пароль: \(user.password)"
         )
     }
 }
