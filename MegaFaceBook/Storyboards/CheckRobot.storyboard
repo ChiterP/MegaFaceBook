@@ -83,7 +83,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Xvu-LI-8D7" kind="push" id="xaM-db-z13"/>
+                                    <segue destination="Xvu-LI-8D7" kind="push" identifier="" id="xaM-db-z13"/>
                                 </connections>
                             </button>
                         </subviews>
