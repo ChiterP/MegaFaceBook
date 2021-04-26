@@ -67,9 +67,9 @@ class RobotViewController: UIViewController {
             changeAlpha(for: otherImageButton)
         }
     }
-    @IBAction func unwindToLogVC (segue: UIStoryboardSegue) {
-        performSegue(withIdentifier: "unwindToLoginVC", sender: self)
-    }
+//    @IBAction func unwindToLogVC (segue: UIStoryboardSegue) {
+//        performSegue(withIdentifier: "unwindToLoginVC", sender: self)
+//    }
     
     @IBAction func selectDoneButton() {
         switch currenPage {

@@ -83,7 +83,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Xvu-LI-8D7" kind="push" identifier="" id="xaM-db-z13"/>
+                                    <segue destination="Xvu-LI-8D7" kind="show" identifier="regUserQuestin" id="xaM-db-z13"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -112,7 +112,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qzp-yK-F6A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="zkQ-V1-xrz" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-426" y="184"/>
+            <point key="canvasLocation" x="-731" y="46"/>
         </scene>
         <!--RegistrationQuestions-->
         <scene sceneID="Xo1-Lg-eXC">
