@@ -5,9 +5,6 @@
 //  Created by Nikita Kelevra on 19.04.2021.
 //
 
-
-
-
 import UIKit
 
 class RegistrationViewController: UIViewController {
@@ -26,7 +23,6 @@ class RegistrationViewController: UIViewController {
     @IBOutlet weak var aboutUserTextField: UITextField!
     
     @IBOutlet weak var registrationButton: UIButton!
-    
     
     // MARK: - Private properties
     //private let person = Person.getPersonData()
@@ -61,7 +57,6 @@ class RegistrationViewController: UIViewController {
     // MARK: - IBActions
     @IBAction func RegistationButton(_ sender: Any) {
         view.endEditing(true)
-        performSegue(withIdentifier: "ShowUserInfoVC", sender: nil)
     }
 }
 
@@ -73,8 +68,6 @@ extension RegistrationViewController: UITextFieldDelegate {
         }
     }
     
-    
-    
     func textFieldDidBeginEditing(_ textField: UITextField) {
         switch textField {
         case lastnameTextField: emailStackView.isHidden = false
@@ -83,7 +76,6 @@ extension RegistrationViewController: UITextFieldDelegate {
         default: registrationButton.isEnabled = true
         }
     }
-    
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         guard let userData = textField.text, !userData.isEmpty else {
@@ -127,7 +119,6 @@ extension RegistrationViewController: UITextFieldDelegate {
         present(alert, animated: true)
     }
     
-    // Проверка правильно введенного Е-мейла
     func validateEmail(enteredEmail: String) -> Bool {
         let emailFormat = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         let emailPredicate = NSPredicate(format:"SELF MATCHES %@", emailFormat)
